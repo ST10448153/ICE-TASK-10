@@ -24,7 +24,14 @@ public class ArraysExamples {
         System.out.println("The Average is:  "+Average);
         
         int min = prices[prices.length-1];
+        for(int i=0; i<prices.length;i++){
+            if(min>prices[i]){
+                min = prices[i];
+            }
+        }
+        System.out.println("The Minimum price is:  "+min);
         
+      
    
     
         
