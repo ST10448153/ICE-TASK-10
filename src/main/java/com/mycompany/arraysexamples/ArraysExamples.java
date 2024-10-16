@@ -31,7 +31,17 @@ public class ArraysExamples {
         }
         System.out.println("The Minimum price is:  "+min);
         
-      
+        int max = prices[0]; 
+        
+        String temp = null;
+        for(int i =0; i<prices.length; i++){
+            if(max<prices[i]){
+                max = prices[i];
+                temp = items[i];
+            }
+        }
+        System.out.println("The Maximum price is:  "+max);
+        System.out.println("The Item with the highes price is:  "+temp);
    
     
         
